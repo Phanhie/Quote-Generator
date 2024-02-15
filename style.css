@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(156, 228, 250);
+    max-height: 100%;
+    max-width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.Container {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    margin:auto;
+    margin-top: 10%;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 7px rgb(91, 120, 122);
+    padding-top: 10px;
+}
+
+.Buttons img {
+    height: 15px;
+    margin-right: 7px;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.Button1 {
+    padding: 13px 25px;
+    background-color: rgb(72, 162, 247);
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+.Button2 {
+    font-size: 15px;
+    font-weight: bolder;
+    width: 129px;
+    height: 43px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid rgb(148, 217, 226);
+    cursor: pointer;
+}
+
+.Container h1 {
+    font-weight: bolders;
+    position: relative;
+}
+
+.Container h1::after {
+    content: '';
+    width: 75px;
+    height:3px;
+    border-radius: 3px;
+    background-color: rgb(72, 162, 247) ;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Container blockquote {
+    font-size: 25px;
+    min-height: 100px;
+    margin-top: 50px;
+}
+
+.Container blockquote::before, .Container blockquote::after{
+   content: '"' 
+}
+
+.Container p {
+    display:block;
+    float: right;
+    position: relative;
+}
+
+.Container p::before {
+    content: '';
+    width:20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left:-30px;
+    background-color: rgb(72, 162, 247);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Container {
+        padding: 20px;
+        width: 80%;
+    }
+  }
